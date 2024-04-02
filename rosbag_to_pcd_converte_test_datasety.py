@@ -52,7 +52,7 @@ def process_rosbag(bag_file, topic_name, base_output_directory):
     print(f"Aggregated PCD saved to {grand_pcd_path}")
 
 if __name__ == "__main__":
-    source_directory = os.path.expanduser("~/SYDE675_project/syde_675_data/test_dataset/different_surfaces")
+    source_directory = os.path.expanduser("~/rosbags/types_of_stairs/cropped_rosbags")
     base_output_directory = os.path.join(source_directory, "processed_pointclouds_combined")
     point_cloud_topic = "/scan_3D"
 

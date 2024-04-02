@@ -57,9 +57,13 @@ def save_pca_results(results, output_file):
     print(f"Saved PCA results to {output_file}")
 
 if __name__ == "__main__":
-    base_directory = '~/SYDE675_project/syde_675_data/processed_pointclouds_combined'
-    output_file = '~/SYDE675_project/syde_675_data/processed_pointclouds_combined/pca_features_with_labels.csv'
-    
+    # base_directory = '~/SYDE675_project/syde_675_data/processed_pointclouds_combined'
+    # output_file = '~/SYDE675_project/syde_675_data/processed_pointclouds_combined/pca_features_with_labels.csv'
+
+    # For test dataset
+    base_directory = '~/SYDE675_project/syde_675_data/test_dataset/processed_pointclouds_combined'
+    output_file = '~/SYDE675_project/syde_675_data/test_dataset/processed_pointclouds_combined/pca_features_with_labels_test.csv'
+ 
     # Ensure the path is absolute
     base_directory = os.path.expanduser(base_directory)
     output_file = os.path.expanduser(output_file)
